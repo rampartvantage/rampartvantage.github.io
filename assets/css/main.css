@@ -1074,3 +1074,149 @@ em     { font-style: italic; }
   color: var(--colour-text-muted);
   font-size: var(--text-lg);
 }
+
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
+
+/* --- Contact Grid --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--space-16);
+  align-items: start;
+}
+
+/* --- Left Column --- */
+.contact-form-wrap h2 {
+  margin-bottom: var(--space-2);
+}
+
+.contact-form-wrap > p {
+  color: var(--colour-text-muted);
+  margin-bottom: var(--space-8);
+}
+
+/* --- Direct Email CTA --- */
+.contact-direct {
+  margin-bottom: var(--space-12);
+}
+
+.contact-direct .btn {
+  margin-bottom: var(--space-3);
+}
+
+.contact-direct .text-muted {
+  color: var(--colour-text-muted);
+}
+
+/* --- What to expect --- */
+.contact-what-to-expect {
+  padding: var(--space-8);
+  background: var(--colour-bg-soft);
+  border: 1px solid var(--colour-border);
+  border-radius: var(--radius-md);
+}
+
+.contact-what-to-expect h3 {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--colour-text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.expect-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.expect-list li {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.expect-number {
+  width: 28px;
+  height: 28px;
+  background: var(--colour-primary);
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.expect-list strong {
+  display: block;
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-1);
+}
+
+.expect-list p {
+  font-size: var(--text-sm);
+  color: var(--colour-text-muted);
+  margin-bottom: 0;
+}
+
+/* --- Sidebar --- */
+.contact-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: sticky;
+  top: calc(4rem + var(--space-8));
+}
+
+.contact-info-block {
+  padding: var(--space-6);
+  background: var(--colour-bg-soft);
+  border: 1px solid var(--colour-border);
+  border-radius: var(--radius-md);
+}
+
+.contact-info-block h3 {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--colour-text-muted);
+  margin-bottom: var(--space-2);
+}
+
+.contact-info-block a {
+  font-weight: 500;
+  font-size: var(--text-base);
+}
+
+.contact-info-block p {
+  font-size: var(--text-sm);
+  color: var(--colour-text-muted);
+  margin-bottom: 0;
+}
+
+.sidebar-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sidebar-service-list li a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar {
+    position: static;
+  }
+}

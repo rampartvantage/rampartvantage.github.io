@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Understanding Essential 8 Maturity Levels"
-date: 2026-04-18
+date: 2026-04-17
 categories: [Essential 8, Compliance]
 author: Rampart Vantage
 description: A plain-language breakdown of ML0 through ML3 and what each level means for your organisation.

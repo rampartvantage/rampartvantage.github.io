@@ -1,0 +1,20 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include head.html %}
+</head>
+
+<body class="{{ page.layout }} {{ page.permalink | replace: '/', '-' }}">
+
+  {% include nav.html %}
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

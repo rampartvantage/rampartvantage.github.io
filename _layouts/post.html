@@ -1,0 +1,47 @@
+<!-- _layouts/post.html -->
+---
+layout: default
+---
+
+<article class="post-content">
+
+  <header class="post-header">
+    <div class="container">
+
+      <div class="post-meta">
+        <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+        {% if page.categories %}
+          <span class="post-categories">
+            {% for category in page.categories %}
+              <span class="post-category">{{ category }}</span>
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+
+      <h1>{{ page.title }}</h1>
+
+      {% if page.excerpt %}
+        <p class="post-excerpt">{{ page.excerpt }}</p>
+      {% endif %}
+
+      {% if page.author %}
+        <span class="post-author">By {{ page.author }}</span>
+      {% endif %}
+
+    </div>
+  </header>
+
+  <section class="post-body">
+    <div class="container">
+      {{ content }}
+    </div>
+  </section>
+
+  <footer class="post-footer">
+    <div class="container">
+      <a href="{{ '/blog' | relative_url }}" class="back-link">&larr; Back to Blog</a>
+    </div>
+  </footer>
+
+</article>

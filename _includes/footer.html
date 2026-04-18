@@ -1,0 +1,47 @@
+<!-- _includes/footer.html -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a class="site-logo" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <p>{{ site.description }}</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="{{ '/services' | relative_url }}">Services</a></li>
+          <li><a href="{{ '/about' | relative_url }}">About</a></li>
+          <li><a href="{{ '/blog' | relative_url }}">Blog</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="{{ '/services#essential-8' | relative_url }}">Essential 8</a></li>
+          <li><a href="{{ '/services#offensive-security' | relative_url }}">Offensive Security</a></li>
+          <li><a href="{{ '/contact' | relative_url }}">Get a Quote</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+          <li>Australia</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <p>ABN: XX XXX XXX XXX</p>
+    </div>
+
+  </div>
+</footer>

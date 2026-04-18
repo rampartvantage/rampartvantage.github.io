@@ -1064,3 +1064,13 @@ em     { font-style: italic; }
     padding: var(--space-8);
   }
 }
+
+/* ============================================
+   BLOG PAGE
+   ============================================ */
+
+.blog-empty {
+  padding-block: var(--space-16);
+  color: var(--colour-text-muted);
+  font-size: var(--text-lg);
+}

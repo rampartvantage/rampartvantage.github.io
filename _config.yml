@@ -4,7 +4,7 @@ title: Rampart Vantage
 tagline: Cybersecurity Consulting
 description: Essential 8 compliance and offensive security consulting for Australian businesses.
 url: "https://rampartvantage.github.io"
-baseurl: "/"
+baseurl: ""
 
 author:
   name: Rampart Vantage

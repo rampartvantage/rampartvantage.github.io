@@ -1,0 +1,41 @@
+# _config.yml
+
+title: Rampart Vantage
+tagline: Cybersecurity Consulting
+description: Essential 8 compliance and offensive security consulting for Australian businesses.
+url: "https://rampartvantage.com.au"
+baseurl: ""
+
+author:
+  name: Rampart Vantage
+  email: rampartvantage@gmail.com
+
+# Build
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:year/:month/:day/:title/
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules

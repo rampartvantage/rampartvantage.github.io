@@ -1,0 +1,59 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+*.gem
+*.rbc
+.rvmrc
+.ruby-version
+
+# rbenv
+.rbenv-vars
+
+# Sass cache
+.sass-cache/
+*.css.map
+
+# Node (if you ever add JS tooling)
+node_modules/
+npm-debug.log*
+yarn-error.log
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# OS — Ubuntu/Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# OS — macOS (if your partner works on Mac)
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Environment / secrets — never commit these
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+log/
+
+# Temp files
+tmp/
+*.tmp
+*.bak
+*.swp
+*.swo

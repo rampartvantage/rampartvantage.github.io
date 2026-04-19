@@ -7,57 +7,109 @@ author: Rampart Vantage
 description: A plain-language breakdown of ML0 through ML3 and what each level means for your organisation.
 ---
 
-The ACSC Essential 8 maturity model is one of those things that sounds
-straightforward until you're sitting in front of a client trying to explain
-why they scored ML1 on patch management despite running monthly updates.
+The Australian Cyber Security Centre Essential Eight maturity model sounds
+straightforward on paper. In practice, many organisations discover it is
+more nuanced when they begin assessing their environment.
 
-This post breaks down what each maturity level actually means in practice —
-and why the difference between ML2 and ML3 is often more about process
-discipline than technical capability.
+A common example is patch management. A business may apply monthly updates
+and assume the control is mature, then find gaps around deployment
+timeframes, unsupported systems, exception handling, or evidence of
+consistent enforcement.
 
-## The four levels
+That does not mean the organisation has failed. It means the maturity model
+is doing what it is designed to do: providing a clearer picture of how
+reliably controls operate in the real world.
 
-**ML0 — Not applied**
-Controls are either absent or so inconsistently applied that they provide
-no meaningful protection. This isn't necessarily negligence — many
-organisations simply haven't had a structured assessment before.
+This post explains what each maturity level represents in practice, why
+organisations often overestimate their current position, and how to use
+assessment results productively.
 
-**ML1 — Partially aligned**
-Core controls exist but gaps remain. An attacker with moderate capability
-could likely bypass them. ML1 organisations are better than nothing,
-but the Essential 8 at this level is more compliance theatre than
-genuine risk reduction.
+## What the maturity levels mean
 
-**ML2 — Mostly aligned**
-Controls are consistently applied and would defeat most opportunistic
-attacks. The majority of ransomware and commodity malware would be stopped
-here. For many small to mid-sized businesses, ML2 is the realistic and
-appropriate target.
+**ML0**
 
-**ML3 — Fully aligned**
-Controls are comprehensive, tested, and hardened against sophisticated
-adversaries. ML3 is the right target for organisations handling sensitive
-data, critical infrastructure, or operating in high-threat sectors.
+Security controls may exist in isolated areas, but they are not applied
+consistently across the environment. Processes are informal, evidence is
+limited, and protection depends heavily on individual effort rather than
+repeatable systems.
 
-## The common misconception
+This is common in growing organisations that have added tools over time
+without a formal security roadmap.
 
-Most organisations assume they're operating at a higher maturity level
-than they are. This isn't dishonesty — it's the natural result of assessing
-your own controls without a structured framework or external verification.
+**ML1**
 
-A maturity assessment isn't a test you pass or fail. It's a calibration.
-Knowing you're at ML1 on application control is useful information.
-It tells you exactly where to focus remediation effort.
+Core controls are in place, but gaps remain in consistency, coverage, or
+governance. Some systems may be protected while others are not. Controls
+may exist technically but lack reliable operational follow-through.
 
-## What to do with your score
+ML1 often reflects an organisation that has started the right work but has
+not yet embedded it across the business.
 
-The maturity level is the starting point, not the destination. Once you
-know where you are, the next step is a gap analysis — understanding
-specifically which controls are absent, which are partially implemented,
-and which are implemented but not verified.
+**ML2**
 
-From there, a remediation roadmap sequences the work by risk reduction
-per effort. Not every gap is worth closing immediately. Some ML2 gaps
-represent more risk than some ML1 gaps depending on your environment.
+Controls are broadly implemented and operate with greater consistency.
+Processes are more disciplined, responsibilities are clearer, and evidence
+can usually be produced when needed.
 
-That prioritisation is where the real value of an assessment lies.
+For many small and mid-sized organisations, ML2 is a practical near-term
+target. It can materially improve resilience against common attack paths
+without requiring the resources of a large enterprise.
+
+**ML3**
+
+Controls are comprehensive, well-governed, and consistently enforced.
+Exceptions are tightly managed, processes are regularly reviewed, and
+security measures are more resilient against capable adversaries.
+
+ML3 is most relevant for organisations handling sensitive data, operating
+in higher-risk sectors, or facing stronger regulatory and threat pressures.
+
+## Why organisations often misjudge their maturity
+
+Many businesses assume they are operating at a higher maturity level than
+an external review would conclude. That is usually not due to negligence
+or misrepresentation.
+
+More often, it happens because internal teams naturally focus on whether a
+control exists, while maturity assessments examine whether that control is
+complete, reliable, repeatable, and evidenced.
+
+For example:
+
+- MFA may be enabled for staff, but not for all privileged accounts.
+- Patching may occur monthly, but critical systems may fall outside required timeframes.
+- Backups may exist, but restore testing may be irregular.
+- Application controls may be configured in some areas, but not enterprise-wide.
+
+This is why independent assessment can be valuable. It creates calibration.
+
+## What to do after an assessment
+
+Once current maturity is understood, the next step is usually a gap
+analysis:
+
+- Which controls are missing entirely?
+- Which controls are partially implemented?
+- Which controls exist but are not consistently evidenced?
+- Which gaps create the highest operational risk?
+
+From there, remediation can be sequenced into a practical roadmap based on
+risk reduction, effort, cost, and business impact.
+
+Not every gap needs to be closed immediately. Smart prioritisation usually
+outperforms attempting everything at once.
+
+## Final thought
+
+The Essential Eight maturity model is most useful when treated as an
+operational guide rather than a compliance checkbox.
+
+Organisations that use it honestly gain a clearer understanding of their
+exposure, a more realistic improvement plan, and stronger security outcomes
+over time.
+
+If you are unsure where your environment currently sits, an independent
+assessment provides practical maturity scoring, evidence-based findings,
+and a prioritised uplift path. We offer Essential 8 assessments tailored
+to Australian businesses — [get in touch](/contact) if you would like to
+discuss your situation.
